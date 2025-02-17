@@ -22,7 +22,6 @@ body {
 }
 
 
-
 .bree-serif-regular {
 font-family: "Bree Serif", serif;
 font-weight: 400;
@@ -464,13 +463,13 @@ h3 {
 
 /* Estilos para el párrafo */
 .texto-intro p {
-  font-size: 1.20rem; /* Tamaño de fuente para el párrafo */
+  font-size: 1.10rem; /* Tamaño de fuente para el párrafo */
 }
 
 /* Responsividad: Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
   .texto-intro h1 {
-    font-size: 1.4rem; /* Reduce el tamaño del título */
+    font-size: 1.10rem; /* Reduce el tamaño del título */
   }
   
   .texto-intro p {
@@ -478,7 +477,7 @@ h3 {
   }
   
   .texto-intro {
-    width: 95%; /* Aumenta el ancho del texto en pantallas pequeñas */
+    width: 85%; /* Aumenta el ancho del texto en pantallas pequeñas */
     padding: 0 15px; /* Añade un poco de espacio lateral */
   }
 }
@@ -486,16 +485,16 @@ h3 {
 /* Responsividad para dispositivos móviles más pequeños */
 @media (max-width: 480px) {
   .texto-intro h1 {
-    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+    font-size: 1.0rem; /* Reduce aún más el tamaño del título */
   }
 
   .texto-intro p {
-    font-size: 0.9rem; /* Ajusta el tamaño del párrafo */
+    font-size: 0.5rem; /* Ajusta el tamaño del párrafo */
   }
 
   .texto-intro {
-    width: 95%; /* Más espacio para el texto en pantallas muy pequeñas */
-    padding: 0 10px; /* Menos espacio lateral */
+    width: 85%; /* Más espacio para el texto en pantallas muy pequeñas */
+    padding: 0 5px; /* Menos espacio lateral */
   }
 }
 
@@ -548,6 +547,15 @@ model-viewer:hover {
   background-color: #0056b3;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    -webkit-text-size-adjust: 100%; /* Previene zoom automático en iOS */
+  }
+
+  .navbar {
+    padding: 10px 15px; /* Ajusta el padding de la barra de navegación */
+  }
+}
 
 
 
