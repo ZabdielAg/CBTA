@@ -1,0 +1,554 @@
+.navbar {
+  background-color: #003366; 
+  box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1); 
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1000; 
+  padding: 10px 20px;
+}
+body {
+  padding-top: 85px;
+  border-radius: 90%;
+}
+
+.intro {
+  width: 100%; 
+  height: 600px; 
+  object-fit: cover;
+}
+
+
+
+.bree-serif-regular {
+font-family: "Bree Serif", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+.container-noticias{
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar-brand img {
+  height: 33px; 
+  width: 100%;
+}
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #FFD700 !important; 
+}
+
+.navbar-toggler{
+
+  color: #ffffff;
+}
+
+.search-icon {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+.search-panel {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  z-index: 9999;
+  border-radius: 5px; 
+  border: 1px solid #ddd; 
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.search-panel input[type="search"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.search-recommendations {
+  list-style: none;
+  padding: 0;
+}
+.search-recommendations li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.search-recommendations li a {
+  text-decoration: none;
+  color: #333;
+}
+.search-recommendations li a:hover {
+  color: #003366;
+}
+
+/* Estudios */
+
+/* General Grid Styles */
+.grid-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; 
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid-img {
+  transition: transform 0.4s ease-in-out;
+  border-radius: 15px;
+}
+
+.grid-img-container:hover .grid-img {
+  transform: scale(1.1); 
+}
+
+.grid-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6); 
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+  border-radius: 15px; 
+}
+
+.grid-img-container:hover .grid-hover-overlay {
+  opacity: 1; 
+}
+
+.grid-hover-overlay i {
+  transition: transform 0.3s ease;
+}
+
+.grid-img-container:hover i {
+  transform: rotate(360deg); 
+}
+
+h3 {
+  margin-top: 20px;
+  font-family: "Bree Serif", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+h3:hover {
+  color: #ffc107; 
+  transition: color 0.3s ease;
+}
+
+.grid-click-text {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.grid-img-container:active .grid-click-text {
+  display: block; 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .grid-img-container {
+    margin-bottom: 20px; 
+  }
+}
+
+
+
+
+/* Noticias */
+
+.news-section {
+  position: relative;
+  background-color: #f8f9fa; 
+}
+
+.news-background {
+  object-fit: cover;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Tarjetas */
+.card {
+  font-family: "Bree Serif", serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px; 
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px; 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Botones */
+.btn-warning {
+  font-family: "Bree Serif", serif;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  transform: translateY(-3px); 
+  font-family: "Bree Serif", serif;
+
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  font-family: "Bree Serif", serif;
+
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+h3 {
+  font-family: "Bree Serif", serif;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.h3-link {
+  text-decoration: none; 
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+
+.h3-link:hover {
+  color: #ffc107; 
+  text-decoration: underline; 
+}
+
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Bree Serif", serif;
+
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 30px 15px;
+  }
+}
+
+#navbar-scroll {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1040;
+  padding: 10px 0; 
+  background-color: #333;
+  transition: top 0.3s;
+}
+
+#navbar-scroll .navbar-brand {
+  font-size: 1.2rem; 
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+#navbar-scroll .nav-link {
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: color 0.3s;
+}
+
+#navbar-scroll .nav-link:hover {
+  color: #ffc107; 
+}
+
+.custom-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.custom-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.highlighted {
+  position: relative;
+}
+.highlighted::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); 
+  z-index: 1;
+}
+
+/* Contacto*/
+/* Navbar */
+.navbar-brand .logo {
+  width: 120px;
+}
+
+/* Carousel */
+.carousel-caption h1, .carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Contact Cards */
+.contact-card {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-icon {
+  width: 50px; /* Ajuste para pantallas pequeñas */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 1rem; /* Escala para pantallas pequeñas */
+  font-weight: bold;
+}
+
+.map-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-title {
+  font-weight: bold;
+}
+
+.mapacbta {
+  width: 100%; /* Responsivo */
+  height: 300px; /* Ajuste para pantallas pequeñas */
+}
+
+.carousel-caption {
+  top: 1px;
+}
+
+@media (min-width: 768px) {
+  .contact-icon {
+    width: 60px; /* Ajuste para pantallas medianas */
+  }
+
+  .contact-title {
+    font-size: 1.25rem; /* Ajuste para pantallas medianas */
+  }
+
+  .mapacbta {
+    height: 450px; /* Altura mayor en pantallas grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption h1 {
+    font-size: 1.25rem; /* Reduce aún más el título en dispositivos muy pequeños */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Ajusta el tamaño del párrafo */
+  }
+}
+
+/* Contenedor de la imagen y texto */
+.container-fluid {
+  padding: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+/* Imagen de fondo responsiva */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo del texto sobre la imagen */
+.texto-intro {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Asegura el centrado perfecto */
+  color: white;
+  text-align: justify;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 80%; /* Limita el ancho del texto */
+}
+
+/* Estilos para el título */
+.texto-intro h1 {
+  font-size: 2.2rem; /* Tamaño de fuente para el título */
+  font-weight: bold;
+}
+
+/* Estilos para el párrafo */
+.texto-intro p {
+  font-size: 1.20rem; /* Tamaño de fuente para el párrafo */
+}
+
+/* Responsividad: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .texto-intro h1 {
+    font-size: 1.4rem; /* Reduce el tamaño del título */
+  }
+  
+  .texto-intro p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo */
+  }
+  
+  .texto-intro {
+    width: 95%; /* Aumenta el ancho del texto en pantallas pequeñas */
+    padding: 0 15px; /* Añade un poco de espacio lateral */
+  }
+}
+
+/* Responsividad para dispositivos móviles más pequeños */
+@media (max-width: 480px) {
+  .texto-intro h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .texto-intro p {
+    font-size: 0.9rem; /* Ajusta el tamaño del párrafo */
+  }
+
+  .texto-intro {
+    width: 95%; /* Más espacio para el texto en pantallas muy pequeñas */
+    padding: 0 10px; /* Menos espacio lateral */
+  }
+}
+
+
+/* modelos */
+model-viewer {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px; /* Bordes más suaves */
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  background: linear-gradient(135deg, #f0f0f0, #d4eaff); /* Fondo pastel azul */
+  border: 2px solid #007bff; /* Azul amigable */
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+model-viewer:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Contenedor del modelo */
+.highlighted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Fondo claro */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Texto */
+.custom-text {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Botón */
+.btn-dark {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.btn-dark:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+

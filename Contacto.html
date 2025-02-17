@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="multimedia/web-app-manifest-512x512.png">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/estilos.css">    
+    <title>CBTA |Centro de Bachillerato Tecnológico Agropecuario</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar mx-auto navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="multimedia/logocbta.png" alt="Logo CBTA">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mx-auto navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="carreras.html">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Oportunidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Docentes</a></li>
+                            <li><a class="dropdown-item" href="#">Egresados</a></li>
+                            <li><a class="dropdown-item" href="#">Noticias</a></li>
+              
+                        </ul>
+                    </li>
+                </ul>
+  
+                <!-- El ico -->
+                <div>
+                    <i class="fas fa-search search-icon" id="searchIcon"></i>
+                </div>
+  
+                <!-- Buscador -->
+                <div class="search-panel mx-auto" id="searchPanel">
+                    <input type="search" placeholder="Buscar..." id="searchInput">
+                    <ul class="search-recommendations mx-auto">
+                        <li><a href="#">Becas disponibles</a></li>
+                        <li><a href="#">Programas académicos</a></li>
+                        <li><a href="#">Talleres y deportes</a></li>
+                        <li><a href="#">Inscripciones abiertas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de promocion de carreras -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="multimedia/CONTA.png" class="d-block w-100" alt="CBTA Banner">
+                <div class="carousel-caption">
+                    <h1>¿Cómo podemos ayudarte?</h1>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Información y Servicios -->
+    <div class="container text-center my-5">
+        <h2>¿Necesitas información sobre nuestros servicios?</h2>
+        <p>Para nosotros es un placer atenderte, por ello te ofrecemos diferentes medios para responder a cada una de tus solicitudes.</p>
+    
+        <div class="row justify-content-center text-center mb-4">
+             <!-- Correo -->
+             <div class="col-md-3 my-3">
+                <a href="mailto:ags.cbta030.direccion@dgetaycm.sems.gob.mx?subject=Consulta&body=Hola, me gustaría obtener información sobre...">
+                    <div class="contact-card">
+                        <img src="multimedia/correo-electronico.png" alt="Correo" class="contact-icon">
+                        <h5 class="contact-title">Escríbenos</h5>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Llamada -->
+            <div class="col-md-3 my-3">
+                <div class="contact-card">
+                    <a href="tel:+524656881714" class="contact-card-link">
+                    <img src="multimedia/llamada.png" alt="Llamar" class="contact-icon">
+                    <h5 class="contact-title">Llámanos</h5>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="col-md-3 my-3">
+                <div class="contact-card">
+                    <a href="https://wa.me/+4656881714?text=Hola%2C%20quiero%20más%20información">
+                    <img src="multimedia/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                    <h5 class="contact-title">WhatsApp</h5>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="row justify-content-center mx-auto">
+            <div class="col-md-8 mx-auto">
+                <div class="map-card mx-auto">
+                    <iframe class="mapacbta mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6214.372885810311!2d-102.26241084562899!3d22.160713474057314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868208048929ab15%3A0x14acb9c8215f7c26!2sCBTa%20No.%2030%20Pabell%C3%B3n%20De%20Arteaga!5e0!3m2!1ses-419!2smx!4v1737603955956!5m2!1ses-419!2smx"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                   
+                     <h5 class="map-title mt-3">Ubicación del plantel CBTA 30°</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark container-fluid text-light text-center py-3">
+        <p>&copy; CBTA 30° "Anita Brenner" Centro de Bachillerato Tecnológico Agropecuario- Todos los derechos reservados</p>
+        <p>&copy; By Zabdiel Ag</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Script/script.js"></script>
+</body>
+</html>
