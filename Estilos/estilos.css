@@ -558,5 +558,136 @@ model-viewer:hover {
 }
 
 
+/* Exploracion apartado */
+header {
+  background-image: url('https://source.unsplash.com/1600x400/?students,school');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card1 {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Borde superior de colores según la personalidad */
+.card1.border-success { border-top: 5px solid #28a745; }
+.card1.border-info { border-top: 5px solid #17a2b8; }
+.card1.border-primary { border-top: 5px solid #007bff; }
+.card1.border-warning { border-top: 5px solid #ffc107; }
+.card1.border-dark { border-top: 5px solid #343a40; }
+.card1.border-danger { border-top: 5px solid #dc3545; }
+
+/* Iconos */
+.card1 i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Títulos */
+.card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Texto */
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Efecto de luz al pasar el mouse */
+.card1:hover::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 50%);
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.card1:hover::before {
+  opacity: 1;
+}
+
+.cbta-header {
+  background: linear-gradient(135deg, #4e73df, #1c3d87); /* Colores más vibrantes */
+  color: white;
+  padding: 50px 30px; /* Más espacio */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25); /* Sombra más suave */
+  border-bottom: 4px solid #1e3a62; /* Color de borde más sutil */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  font-family: 'Century Gothic', sans-serif; /* Fuente Century Gothic */
+}
+
+.cbta-section {
+  background: #529ae1; /* Fondo más claro y cálido */
+  padding: 60px 30px;
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  font-family: 'Century Gothic', sans-serif; /* Fuente Century Gothic */
+}
+
+.cbta-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase; /* Mayúsculas para un toque más formal */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  color: #333; /* Color más oscuro para el título */
+  font-family: 'Century Gothic', sans-serif; /* Fuente Century Gothic */
+}
+
+.cbta-text {
+  font-size: 1.2rem;
+  color: #ffffff; /* Color más suave para el texto */
+  max-width: 850px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.7; /* Espaciado mayor entre líneas */
+  font-family: 'Century Gothic', sans-serif; /* Fuente Century Gothic */
+  padding: 0 10px; /* Espacio interior */
+}
+
+.cbta-btn {
+  background-color: #4e73df; /* Color de fondo azul */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cbta-btn:hover {
+  background-color: #465a86; /* Fondo más oscuro en hover */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* logocbtaiphone */
+.logo-responsivo {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
 
 

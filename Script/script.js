@@ -44,3 +44,42 @@ window.addEventListener("scroll", function () {
     }
     lastScrollTop = currentScrollTop;
 });
+
+// buscador
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+    const items = searchResults.getElementsByTagName("li");
+
+    searchInput.addEventListener("input", function () {
+      let filter = searchInput.value.toLowerCase();
+      let hasResults = false;
+
+      for (let i = 0; i < items.length; i++) {
+        let text = items[i].textContent.toLowerCase();
+        if (text.includes(filter)) {
+          items[i].style.display = "block";
+          hasResults = true;
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+
+      // Mostrar la lista solo si hay resultados
+      searchResults.style.display = hasResults ? "block" : "none";
+    });
+
+    // Ocultar la lista cuando el usuario haga clic fuera del input
+    document.addEventListener("click", function (e) {
+      if (!searchPanel.contains(e.target)) {
+        searchResults.style.display = "none";
+      }
+    });
+
+    // Mostrar sugerencias cuando el usuario haga clic en el input
+    searchInput.addEventListener("focus", function () {
+      if (searchInput.value !== "") {
+        searchResults.style.display = "block";
+      }
+    });
+  });
