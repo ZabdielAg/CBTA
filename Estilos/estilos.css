@@ -688,6 +688,7 @@ responsivo en el logo */
   .logo-img {
     max-width: 80%; /* Reduce el tamaño del logo en pantallas medianas */
     height: auto; /* Mantiene las proporciones */
+    object-fit: contain;
   }
 }
 
@@ -696,6 +697,8 @@ responsivo en el logo */
   .logo-img {
     max-width: 70%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
     height: auto; /* Mantiene las proporciones */
+    position: relative;
+    object-fit: contain;
   }
 }
 
