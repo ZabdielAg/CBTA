@@ -704,6 +704,38 @@ responsivo en el logo */
   }
 }
 
+/* Estilo base para el botón */
+.btn-animated {
+  background-color: #4ba2c7; /* Color verde */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px; /* Bordes redondeados */
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.btn-animated:hover {
+  background-color: #ebb236; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-5px); /* Eleva el botón */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Añade sombra para el efecto de elevación */
+}
+
+/* Efecto de enfoque (foco) */
+.btn-animated:focus {
+  outline: none; /* Elimina el borde de enfoque por defecto */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Añade un resplandor verde al hacer clic */
+}
+
+/* Animación de 'pulse' al hacer clic */
+.btn-animated:active {
+  transform: scale(0.95); /* Reduce ligeramente el tamaño */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* Efecto de sombra cuando se hace clic */
+}
+
 
 
 
