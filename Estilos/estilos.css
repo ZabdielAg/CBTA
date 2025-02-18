@@ -39,6 +39,7 @@ font-style: normal;
 .navbar-brand img {
   height: 55px; 
   width: 110%;
+  object-fit: contain;
 }
 .nav-link {
   color: white !important;
