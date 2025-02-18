@@ -161,11 +161,41 @@
     </div>
 </section>
 
-<!-- Botón para iniciar el test -->
-<div class="text-center my-4">
-    <a href="test.html" class="btn  btn-lg btn-animated">Iniciar el Test</a>
-  </div>
-  
+
+<div class="container1 mx-auto">
+    <!-- Pantalla de Inicio -->
+    <div id="startScreen" class="start-screen mx-auto">
+        <h1>Bienvenido al Test de Orientación</h1>
+        <button id="startTest" class="btn">Iniciar Test</button>
+    </div>
+
+    <!-- Sección del Test -->
+    <div id="testContainer" class="test-container hidden">
+        <h2 id="questionText">Pregunta aquí...</h2>
+
+        <div class="options">
+            <button class="option-btn" onclick="selectAnswer(1)">Totalmente en desacuerdo</button>
+            <button class="option-btn" onclick="selectAnswer(2)">En desacuerdo</button>
+            <button class="option-btn" onclick="selectAnswer(3)">Neutral</button>
+            <button class="option-btn" onclick="selectAnswer(4)">De acuerdo</button>
+            <button class="option-btn" onclick="selectAnswer(5)">Totalmente de acuerdo</button>
+        </div>
+
+        <!-- Barra de Progreso -->
+        <div class="progress">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Resultado -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <h2>¡Felicidades!</h2>
+        <p id="resultText">Tu carrera ideal es...</p>
+        <button onclick="restartTest()" class="btn">Reiniciar Test</button>
+    </div>
+</div>
 
     
 

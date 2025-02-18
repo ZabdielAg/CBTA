@@ -707,7 +707,7 @@ responsivo en el logo */
 
 /* Estilo base para el botón */
 .btn-animated {
-  background-color: #4ba2c7; /* Color verde */
+  background-color: #44b7e8; /* Color verde */
   color: white;
   padding: 15px 30px;
   font-size: 1.1rem;
@@ -728,14 +728,172 @@ responsivo en el logo */
 /* Efecto de enfoque (foco) */
 .btn-animated:focus {
   outline: none; /* Elimina el borde de enfoque por defecto */
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Añade un resplandor verde al hacer clic */
+  box-shadow: 0 0 10px rgba(81, 179, 224, 0.7); /* Añade un resplandor verde al hacer clic */
 }
 
 /* Animación de 'pulse' al hacer clic */
 .btn-animated:active {
   transform: scale(0.95); /* Reduce ligeramente el tamaño */
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15); /* Efecto de sombra cuando se hace clic */
+  box-shadow: 0 0 8px rgba(226, 160, 27, 0.801); /* Efecto de sombra cuando se hace clic */
 }
+
+/* test */
+.container1 {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s forwards;
+  text-align: center; /* Justificar texto */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Botón principal centrado */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Ocultar test al inicio */
+.hidden {
+  display: none;
+}
+
+/* Botones de respuestas */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #eee;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  opacity: 0;
+  animation: slideUp 0.5s forwards;
+  text-align: center;
+}
+
+.option-btn:hover {
+  background: #ddd;
+  transform: scale(1.05);
+}
+
+/* Animación de entrada de opciones */
+@keyframes slideUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Barra de progreso */
+.progress {
+  width: 100%;
+  background: #ddd;
+  height: 12px;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Barra de progreso animada */
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff9800, #e65100);
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}
+
+/* Efecto de onda en la barra de progreso */
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  animation: wave 2s infinite linear;
+}
+
+@keyframes wave {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Modal emergente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenido del Modal */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  animation: modalPop 0.5s ease-in-out;
+  text-align: justify; /* Justificar texto */
+}
+
+/* Animación del Modal */
+@keyframes modalPop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Mostrar modal correctamente */
+.show-modal {
+  display: flex !important;
+}
+
 
 
 

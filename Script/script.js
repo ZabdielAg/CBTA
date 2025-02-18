@@ -83,3 +83,79 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+//   test
+const questions = [
+    "Me gusta trabajar con animales y la naturaleza.",
+    "Disfruto organizar y administrar proyectos.",
+    "Me interesa el mundo de la informática y la tecnología.",
+    "Prefiero actividades prácticas y manuales.",
+    "Me gustaría emprender mi propio negocio."
+];
+
+const careers = [
+    "Tec. Explotación Ganadera",
+    "Tec. Agropecuario",
+    "Tec. Ofimática",
+    "Tec. Administración de Emprendimiento"
+];
+
+let currentQuestion = 0;
+let answers = [];
+
+document.getElementById("startTest").addEventListener("click", function () {
+    document.getElementById("startScreen").classList.add("hidden");
+    document.getElementById("testContainer").classList.remove("hidden");
+    updateQuestion();
+});
+
+// Muestra la pregunta actual
+function updateQuestion() {
+    if (currentQuestion < questions.length) {
+        document.getElementById("questionText").textContent = questions[currentQuestion];
+        updateProgressBar();
+    } else {
+        showResult();
+    }
+}
+
+// Guardar respuestas y avanzar
+function selectAnswer(score) {
+    answers.push(score);
+    currentQuestion++;
+    updateQuestion();
+}
+
+// Actualiza barra de progreso
+function updateProgressBar() {
+    let progress = ((currentQuestion / questions.length) * 100) + "%";
+    document.getElementById("progressBar").style.width = progress;
+}
+
+// Calcula y muestra el resultado
+function showResult() {
+    let totalScore = answers.reduce((a, b) => a + b, 0);
+    let resultText = "";
+
+    if (totalScore >= 20) {
+        resultText = "¡Parece que eres ideal para " + careers[3] + "!";
+    } else if (totalScore >= 15) {
+        resultText = "Tu perfil encaja con " + careers[2] + ".";
+    } else if (totalScore >= 10) {
+        resultText = "Podrías considerar " + careers[0] + ".";
+    } else {
+        resultText = "Tal vez " + careers[1] + " sea la mejor opción para ti.";
+    }
+
+    document.getElementById("resultText").textContent = resultText;
+    document.getElementById("resultModal").classList.add("show-modal");
+}
+
+// Reiniciar Test
+function restartTest() {
+    currentQuestion = 0;
+    answers = [];
+    document.getElementById("resultModal").classList.remove("show-modal");
+    document.getElementById("startScreen").classList.remove("hidden");
+    document.getElementById("testContainer").classList.add("hidden");
+}
