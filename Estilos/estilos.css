@@ -681,13 +681,24 @@ header {
   background-color: #465a86; /* Fondo más oscuro en hover */
   transform: translateY(-2px); /* Efecto de elevación */
 }
+/* 
+responsivo en el logo */
 
-/* logocbtaiphone */
-.logo-responsivo {
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto; 
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 80%; /* Reduce el tamaño del logo en pantallas medianas */
+    height: auto; /* Mantiene las proporciones */
+  }
 }
+
+/* Responsividad para dispositivos móviles más pequeños */
+@media (max-width: 480px) {
+  .logo-img {
+    max-width: 70%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
+    height: auto; /* Mantiene las proporciones */
+  }
+}
+
+
 
 
