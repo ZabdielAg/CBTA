@@ -895,6 +895,99 @@ responsivo en el logo */
 }
 
 
+/* Docentes */
+.docentes-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+}
+
+.docente-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 280px;
+  scroll-snap-align: start;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.docente-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.docente-card img {
+  border-radius: 12px 12px 0 0;
+  max-height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.docente-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.docente-nombre {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.btn-expand {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.btn-expand:hover {
+  background: #218838;
+}
+
+.expand-info {
+  display: none;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateX(100%);
+}
+
+.expand-info.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.docente-card:hover .expand-info {
+  transform: translateX(0);
+}
+
+.docente-card .btn-expand {
+  z-index: 1;
+}
+
 
 
 
