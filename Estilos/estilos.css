@@ -267,6 +267,8 @@ h3 {
 .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 900px;
+
   font-family: "Bree Serif", serif;
 
 }
@@ -705,6 +707,28 @@ responsivo en el logo */
   }
 }
 
+
+/* Ajuste para pantallas medianas (tablets y smartphones grandes) */
+@media (max-width: 768px) {
+  .contenido {
+    padding: 20px; /* Reduce el padding en pantallas medianas */
+  }
+}
+
+/* Ajuste para smartphones pequeños (iPhone SE, etc.) */
+@media (max-width: 480px) {
+  .contenido {
+    padding: 15px; /* Reduce aún más el padding */
+  }
+}
+
+/* Ajuste para dispositivos extra pequeños (iPhone mini, etc.) */
+@media (max-width: 360px) {
+  .contenido {
+    padding: 10px; /* Padding mínimo para pantallas muy pequeñas */
+  }
+}
+
 /* Estilo base para el botón */
 .btn-animated {
   background-color: #44b7e8; /* Color verde */
@@ -896,97 +920,104 @@ responsivo en el logo */
 
 
 /* Docentes */
-.docentes-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px;
-  scroll-snap-type: x mandatory;
-  justify-content: center;
+/* Contenedor */
+.container2 {
+  max-width: 1000px;
+  margin: auto;
 }
 
+/* Estilos de la Card */
 .docente-card {
-  position: relative;
-  flex: 0 0 auto;
-  width: 280px;
-  scroll-snap-align: start;
-  border: none;
-  border-radius: 12px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  overflow: hidden;
-  background: #f9f9f9;
-}
-
-.docente-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.docente-card img {
-  border-radius: 12px 12px 0 0;
-  max-height: 220px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.docente-info {
-  padding: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 420px; /* Hacerlo más cuadrado */
+  min-height: 230px;
+  border: 2px solid transparent;
+  overflow: hidden;
 }
 
-.docente-nombre {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
+/* Efecto Hover */
+.docente-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-color: #ffa500;
 }
 
-.btn-expand {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 25px;
-  font-size: 0.9em;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  align-self: flex-start;
-  margin-top: auto;
+/* Imagen dentro de la Card */
+.docente-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #ffa500;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto en la imagen */
+.docente-card:hover img {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+/* Información */
+.docente-info {
+  flex: 1;
+  padding: 0 15px;
 }
 
 .btn-expand:hover {
-  background: #218838;
+  background-color: #e68a00;
+  transform: scale(1.1);
 }
 
-.expand-info {
-  display: none;
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease-in-out;
-  margin-top: 10px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  transform: translateX(100%);
+/* Estilo especial para invertir la card */
+.docente-card.invertida {
+  flex-direction: row-reverse; /* Invierte la dirección de los elementos */
+  text-align: right;
 }
 
-.expand-info.open {
+.texto-docente {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  background: linear-gradient(90deg, #ffa500, #ff7b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(255, 123, 0, 0.4);
+  position: relative;
+  display: inline-block;
+}
+
+/* Línea decorativa debajo */
+.contenedor-texto {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.texto-docente::after {
+  content: "";
   display: block;
-  transform: translateX(0);
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffa500, #ff7b00);
+  margin: 8px auto 0;
+  border-radius: 5px;
 }
 
-.docente-card:hover .expand-info {
-  transform: translateX(0);
+/* Efecto hover */
+.texto-docente:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
-.docente-card .btn-expand {
-  z-index: 1;
-}
 
 
 

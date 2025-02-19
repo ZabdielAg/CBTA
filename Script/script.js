@@ -160,8 +160,4 @@ function restartTest() {
     document.getElementById("testContainer").classList.add("hidden");
 }
 
-// Docentes
-function toggleInfo(id) {
-    var info = document.getElementById(id);
-    info.style.display = info.style.display === 'block' ? 'none' : 'block';
-}
+
