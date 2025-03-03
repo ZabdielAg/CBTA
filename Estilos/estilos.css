@@ -1019,6 +1019,8 @@ responsivo en el logo */
 }
 
 
-
+.modal-backdrop {
+  display: none !important;
+}
 
 

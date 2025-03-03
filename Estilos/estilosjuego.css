@@ -1,0 +1,672 @@
+.navbar {
+    background-color: #003366; 
+    box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1); 
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+    padding: 7px 20px;
+  }
+  body {
+    padding-top: 85px;
+    border-radius: 90%;
+  }
+  
+  .intro {
+    width: 100%; 
+    height: 600px; 
+    object-fit: cover;
+  }
+  
+  
+  .bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  
+  .container-noticias{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .navbar-brand img {
+    height: 55px; 
+    width: 110%;
+    object-fit: contain;
+  }
+  .nav-link {
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    color: #FFD700 !important; 
+  }
+  
+  .navbar-toggler{
+  
+    color: #ffffff;
+  }
+  
+  .search-icon {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .search-panel {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    z-index: 9999;
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .search-panel input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .search-recommendations {
+    list-style: none;
+    padding: 0;
+  }
+  .search-recommendations li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .search-recommendations li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .search-recommendations li a:hover {
+    color: #003366;
+  }
+  
+  /* Estudios */
+  
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .grid-img-container {
+      margin-bottom: 20px; 
+    }
+  }
+  
+  
+  
+  
+ 
+
+  .text-center {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 150px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 30px 15px;
+    }
+  }
+  
+ 
+  
+  
+  @media (min-width: 768px) {
+    .contact-icon {
+      width: 60px; /* Ajuste para pantallas medianas */
+    }
+  
+    .contact-title {
+      font-size: 1.25rem; /* Ajuste para pantallas medianas */
+    }
+  
+    .mapacbta {
+      height: 450px; /* Altura mayor en pantallas grandes */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 1.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-caption h1 {
+      font-size: 1.25rem; /* Reduce aún más el título en dispositivos muy pequeños */
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem; /* Ajusta el tamaño del párrafo */
+    }
+  }
+  
+ 
+  
+  /* Estilos para el título */
+  .texto-intro h1 {
+    font-size: 2.2rem; /* Tamaño de fuente para el título */
+    font-weight: bold;
+  }
+  
+  /* Estilos para el párrafo */
+  .texto-intro p {
+    font-size: 1.10rem; /* Tamaño de fuente para el párrafo */
+  }
+  
+  /* Responsividad: Ajustes para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .texto-intro h1 {
+      font-size: 1.10rem; /* Reduce el tamaño del título */
+    }
+    
+    .texto-intro p {
+      font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+    
+    .texto-intro {
+      width: 85%; /* Aumenta el ancho del texto en pantallas pequeñas */
+      padding: 0 15px; /* Añade un poco de espacio lateral */
+    }
+  }
+  
+  /* Responsividad para dispositivos móviles más pequeños */
+  @media (max-width: 480px) {
+    .texto-intro h1 {
+      font-size: 1.0rem; /* Reduce aún más el tamaño del título */
+    }
+  
+    .texto-intro p {
+      font-size: 0.5rem; /* Ajusta el tamaño del párrafo */
+    }
+  
+    .texto-intro {
+      width: 85%; /* Más espacio para el texto en pantallas muy pequeñas */
+      padding: 0 5px; /* Menos espacio lateral */
+    }
+  }
+  
+  
+  
+  /* Botón */
+  .btn-dark {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+  
+  .btn-dark:hover {
+    background-color: #0056b3;
+  }
+  
+  @supports (-webkit-touch-callout: none) {
+    body {
+      -webkit-text-size-adjust: 100%; /* Previene zoom automático en iOS */
+    }
+  
+    .navbar {
+      padding: 10px 15px; /* Ajusta el padding de la barra de navegación */
+    }
+  }
+  
+
+  
+  /* Efecto de luz al pasar el mouse */
+  
+  /* 
+  responsivo en el logo */
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      max-width: 90%; /* Reduce el tamaño del logo en pantallas medianas */
+      height: auto; /* Mantiene las proporciones */
+      object-fit: contain;
+      text-align: center;
+    }
+  }
+  
+  /* Responsividad para dispositivos móviles más pequeños */
+  @media (max-width: 480px) {
+    .logo-img {
+      max-width: 80%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
+      height: auto; /* Mantiene las proporciones */
+      position: relative;
+      text-align: center;
+      object-fit: contain;
+    }
+  }
+  
+  
+  /* Ajuste para pantallas medianas (tablets y smartphones grandes) */
+  @media (max-width: 768px) {
+    .contenido {
+      padding: 20px; /* Reduce el padding en pantallas medianas */
+    }
+  }
+  
+  /* Ajuste para smartphones pequeños (iPhone SE, etc.) */
+  @media (max-width: 480px) {
+    .contenido {
+      padding: 15px; /* Reduce aún más el padding */
+    }
+  }
+  
+  /* Ajuste para dispositivos extra pequeños (iPhone mini, etc.) */
+  @media (max-width: 360px) {
+    .contenido {
+      padding: 10px; /* Padding mínimo para pantallas muy pequeñas */
+    }
+  }
+  
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Botón principal centrado */
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+  }
+  
+  /* Ocultar test al inicio */
+  .hidden {
+    display: none;
+  }
+  
+  /* Botones de respuestas */
+  .option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: #eee;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    opacity: 0;
+    animation: slideUp 0.5s forwards;
+    text-align: center;
+  }
+  
+  .option-btn:hover {
+    background: #ddd;
+    transform: scale(1.05);
+  }
+  
+  /* Animación de entrada de opciones */
+  @keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  /* Barra de progreso */
+  .progress {
+    width: 100%;
+    background: #ddd;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Barra de progreso animada */
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff9800, #e65100);
+    transition: width 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  /* Efecto de onda en la barra de progreso */
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    animation: wave 2s infinite linear;
+  }
+  
+  @keyframes wave {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  /* Modal emergente */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenido del Modal */
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalPop 0.5s ease-in-out;
+    text-align: justify; /* Justificar texto */
+  }
+  
+  /* Animación del Modal */
+  @keyframes modalPop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Mostrar modal correctamente */
+  .show-modal {
+    display: flex !important;
+  }
+  
+
+  .modal-backdrop {
+    display: none !important;
+  }
+  
+  /* Estilo global */
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background: linear-gradient(to right, #f06, #ffdb58);
+    padding-top: 85px; /* Espacio para la barra de navegación fija */
+    margin: 0;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #003366;
+    box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1);
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 7px 20px;
+  }
+  
+  .navbar-brand img {
+    height: 55px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #FFD700 !important;
+  }
+  
+  .navbar-toggler {
+    color: #ffffff;
+  }
+  
+  .search-icon {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el contenedor principal del juego */
+  .container {
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cuadro de la pregunta */
+  #question-box {
+    margin-top: 30px;
+  }
+  
+  #question {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  /* Botones de respuestas */
+  button {
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para el resultado del juego */
+  #result {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .text-success {
+    background-color: rgba(40, 167, 69, 0.7);
+    color: #fff;
+    border: 1px solid #28a745;
+  }
+  
+  .text-danger {
+    background-color: rgba(220, 53, 69, 0.7);
+    color: #fff;
+    border: 1px solid #dc3545;
+  }
+  
+  /* Estilo para el botón de reiniciar */
+  #restart-box {
+    margin-top: 30px;
+    display: none;
+  }
+  
+  #restart-box button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  #restart-box button:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
+  /* Barra de progreso */
+  .progress {
+    width: 100%;
+    background: #ddd;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff9800, #e65100);
+    transition: width 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    animation: wave 2s infinite linear;
+  }
+  
+  @keyframes wave {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  /* Modal emergente */
+ /* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 12;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el contenido del modal */
+  .modal-content {
+    background-color: rgb(202, 51, 51); /* Fondo del modal */
+    padding: 50px;
+    width: 100%; 
+    text-align: center; 
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalPop 0.5s ease-in-out;
+    color: #fff;  
+    font-size: 1.25rem; 
+  }
+  
+  /* Animación de apertura del modal */
+  @keyframes modalPop {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .show-modal {
+    display: flex !important;
+  }
+  
+  .modal-backdrop {
+    display: none !important;
+  }
+  
+  
+  
