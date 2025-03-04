@@ -87,8 +87,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     let preguntas = [
         { pregunta: "¿Con qué programa harías una hoja de cálculo?", opciones: ["Word", "Excel", "PowerPoint"], correcta: 1 },
-        { pregunta: "Completa: Pow_r Po_nt", opciones: ["Power Print", "PowerPoint", "Power Paint"], correcta: 1 }
+        { pregunta: "Completa: Pow_r Po_nt", opciones: ["Power Print", "PowerPoint", "Power Paint"], correcta: 1 },
+        { pregunta: "¿Cuál es la extensión de un documento de Microsoft Word?", opciones: [".doc", ".xls", ".ppt"], correcta: 0 },
+        { pregunta: "¿Qué atajo de teclado se usa para copiar en Windows?", opciones: ["Ctrl + C", "Ctrl + V", "Ctrl + X"], correcta: 0 },
+        { pregunta: "¿Qué programa de Microsoft Office se usa para crear presentaciones?", opciones: ["Excel", "PowerPoint", "Word"], correcta: 1 },
+        { pregunta: "¿Cómo se guarda un archivo rápidamente en la mayoría de los programas de Office?", opciones: ["Ctrl + S", "Ctrl + P", "Ctrl + Z"], correcta: 0 },
+        { pregunta: "¿Qué tipo de archivo genera Excel por defecto?", opciones: [".docx", ".xlsx", ".pptx"], correcta: 1 },
+        { pregunta: "¿Qué función de Excel se usa para sumar un rango de celdas?", opciones: ["=SUMA()", "=PROMEDIO()", "=CONTAR()"], correcta: 0 },
+        { pregunta: "¿Qué opción permite cambiar la orientación de una página en Word?", opciones: ["Diseño de página", "Referencias", "Revisar"], correcta: 0 },
+        { pregunta: "¿Cuál de estas herramientas se usa para revisar la ortografía en Word?", opciones: ["Corrector ortográfico", "Tablas dinámicas", "Formato condicional"], correcta: 0 },
+        { pregunta: "¿Qué combinación de teclas se usa para deshacer la última acción en Office?", opciones: ["Ctrl + Z", "Ctrl + Y", "Ctrl + X"], correcta: 0 },
+        { pregunta: "En PowerPoint, ¿qué opción se usa para agregar efectos a las diapositivas?", opciones: ["Transiciones", "Formato de celda", "Corrección ortográfica"], correcta: 0 }
     ];
+    
 
     let preguntaActual = 0;
     let puntaje = 0;
