@@ -559,7 +559,7 @@ model-viewer:hover {
   }
 
   .navbar {
-    padding: 8px 10px; /* Ajusta el padding de la barra de navegación */
+    padding: 4px 5px; /* Ajusta el padding de la barra de navegación */
   }
 }
 
@@ -692,7 +692,7 @@ responsivo en el logo */
 
 @media (max-width: 768px) {
   .logo-img {
-    max-width: 90%; /* Reduce el tamaño del logo en pantallas medianas */
+    max-width: 100%; /* Reduce el tamaño del logo en pantallas medianas */
     height: auto; /* Mantiene las proporciones */
     object-fit: contain;
     text-align: center;
@@ -714,14 +714,14 @@ responsivo en el logo */
 /* Ajuste para pantallas medianas (tablets y smartphones grandes) */
 @media (max-width: 768px) {
   .contenido {
-    padding: 15px; /* Reduce el padding en pantallas medianas */
+    padding: 8px; /* Reduce el padding en pantallas medianas */
   }
 }
 
 /* Ajuste para smartphones pequeños (iPhone SE, etc.) */
 @media (max-width: 480px) {
   .contenido {
-    padding: 10px; /* Reduce aún más el padding */
+    padding: 8px; /* Reduce aún más el padding */
   }
 }
 
