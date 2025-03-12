@@ -55,6 +55,10 @@ font-style: normal;
   color: #ffffff;
 }
 
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
 .search-icon {
   color: white;
   font-size: 22px;
@@ -181,7 +185,6 @@ h3:hover {
 
 
 
-
 /* Noticias */
 
 .news-section {
@@ -296,7 +299,7 @@ h3 {
   top: 0;
   z-index: 1040;
   padding: 10px 0; 
-  background-color: #333;
+  background-color: #ffffff;
   transition: top 0.3s;
 }
 
@@ -699,7 +702,7 @@ responsivo en el logo */
 /* Responsividad para dispositivos móviles más pequeños */
 @media (max-width: 480px) {
   .logo-img {
-    max-width: 80%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
+    max-width: 100%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
     height: auto; /* Mantiene las proporciones */
     position: relative;
     text-align: center;
@@ -711,21 +714,21 @@ responsivo en el logo */
 /* Ajuste para pantallas medianas (tablets y smartphones grandes) */
 @media (max-width: 768px) {
   .contenido {
-    padding: 20px; /* Reduce el padding en pantallas medianas */
+    padding: 15px; /* Reduce el padding en pantallas medianas */
   }
 }
 
 /* Ajuste para smartphones pequeños (iPhone SE, etc.) */
 @media (max-width: 480px) {
   .contenido {
-    padding: 15px; /* Reduce aún más el padding */
+    padding: 10px; /* Reduce aún más el padding */
   }
 }
 
 /* Ajuste para dispositivos extra pequeños (iPhone mini, etc.) */
 @media (max-width: 360px) {
   .contenido {
-    padding: 10px; /* Padding mínimo para pantallas muy pequeñas */
+    padding: 8px; /* Padding mínimo para pantallas muy pequeñas */
   }
 }
 
