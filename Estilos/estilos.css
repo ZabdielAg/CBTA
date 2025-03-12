@@ -559,7 +559,7 @@ model-viewer:hover {
   }
 
   .navbar {
-    padding: 0px 2px; /* Ajusta el padding de la barra de navegación */
+    padding: 0px 0px; /* Ajusta el padding de la barra de navegación */
   }
 }
 
