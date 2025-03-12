@@ -714,21 +714,21 @@ responsivo en el logo */
 /* Ajuste para pantallas medianas (tablets y smartphones grandes) */
 @media (max-width: 768px) {
   .contenido {
-    padding: 5px; /* Reduce el padding en pantallas medianas */
+    padding: 2px; /* Reduce el padding en pantallas medianas */
   }
 }
 
 /* Ajuste para smartphones pequeños (iPhone SE, etc.) */
 @media (max-width: 480px) {
   .contenido {
-    padding: 5px; /* Reduce aún más el padding */
+    padding: 2px; /* Reduce aún más el padding */
   }
 }
 
 /* Ajuste para dispositivos extra pequeños (iPhone mini, etc.) */
 @media (max-width: 360px) {
   .contenido {
-    padding: 5px; /* Padding mínimo para pantallas muy pequeñas */
+    padding: 2px; /* Padding mínimo para pantallas muy pequeñas */
   }
 }
 
