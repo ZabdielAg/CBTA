@@ -743,7 +743,7 @@ responsivo en el logo */
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 5px 10px; /* Ajusta el padding */
+    padding: 0px 10px; /* Ajusta el padding */
     margin-top: 0 !important; /* Evita márgenes no deseados */
   }
 }
