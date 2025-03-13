@@ -29,6 +29,7 @@ body {
   padding-top: 100px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
   border-radius: 0; /* El border-radius del body lo cambiamos a 0 para evitar un borde curvado en el body */
   transition: padding-top 0.3s ease-in-out; /* Transición suave para padding-top */
+  object-fit: cover;
 }
 
 /* Para evitar que el navbar cubra contenido en pantallas muy pequeñas */
