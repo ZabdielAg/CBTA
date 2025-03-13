@@ -693,18 +693,29 @@ header {
 }
 /* 
 responsivo en el logo */
-
+/* Responsividad para dispositivos móviles más pequeños */
 @media (max-width: 768px) {
   .logo-img {
-    max-width: 100%; /* Reduce el tamaño del logo en pantallas medianas */
-    height: auto; /* Mantiene las proporciones */
+    max-width: 100%; /* Reduce el tamaño del logo */
+    height: auto; 
     object-fit: contain;
     text-align: center;
     padding-top: 1px;
   }
+
+  .contenido {
+    padding: 2px; /* Reduce el padding en pantallas medianas */
+    padding-top: 10px; /* Da espacio superior para evitar la interferencia con el navbar */
+    margin-top: 50px; /* Asegura que haya espacio suficiente debajo del navbar */
+  }
+
+  .navbar {
+    padding: 0px 10px; /* Ajusta el padding del navbar */
+    margin-top: 0 !important; /* Elimina márgenes no deseados */
+  }
 }
 
-/* Responsividad para dispositivos móviles más pequeños */
+/* Ajuste para dispositivos muy pequeños */
 @media (max-width: 480px) {
   .logo-img {
     max-width: 80%; /* Ajusta el tamaño del logo */
@@ -713,42 +724,28 @@ responsivo en el logo */
     margin: 0 auto; /* Centra el logo */
     padding-top: 0 !important; /* Elimina cualquier padding superior */
   }
-}
 
-
-/* Ajuste para pantallas medianas (tablets y smartphones grandes) */
-@media (max-width: 768px) {
-  .contenido {
-    padding: 2px; /* Reduce el padding en pantallas medianas */
-    padding-top: 1px;
-
-  }
-}
-
-/* Ajuste para smartphones pequeños (iPhone SE, etc.) */
-@media (max-width: 480px) {
   .contenido {
     padding: 2px; /* Reduce aún más el padding */
-    padding-top: 1px;
-
+    padding-top: 10px;
+    margin-top: 60px; /* Añade más espacio para evitar solapamiento con el navbar */
   }
-}
 
-/* Ajuste para dispositivos extra pequeños (iPhone mini, etc.) */
-@media (max-width: 360px) {
-  .contenido {
-    padding: 2px; /* Padding mínimo para pantallas muy pequeñas */
-    padding-top: 1px;
-
-  }
-}
-
-@media (max-width: 480px) {
   .navbar {
     padding: 0px 10px; /* Ajusta el padding */
     margin-top: 0 !important; /* Evita márgenes no deseados */
   }
 }
+
+/* Ajuste para dispositivos extra pequeños */
+@media (max-width: 360px) {
+  .contenido {
+    padding: 2px; /* Padding mínimo */
+    padding-top: 10px;
+    margin-top: 70px; /* Más espacio para pantallas pequeñas */
+  }
+}
+
 /* Estilo base para el botón */
 .btn-animated {
   background-color: #44b7e8; /* Color verde */
