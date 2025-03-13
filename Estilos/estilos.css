@@ -705,13 +705,11 @@ responsivo en el logo */
 /* Responsividad para dispositivos móviles más pequeños */
 @media (max-width: 480px) {
   .logo-img {
-    max-width: 100%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
-    height: auto; /* Mantiene las proporciones */
-    position: relative;
-    text-align: center;
-    object-fit: contain;
-    padding-top: 1px;
-
+    max-width: 80%; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra el logo */
+    padding-top: 0 !important; /* Elimina cualquier padding superior */
   }
 }
 
@@ -743,6 +741,12 @@ responsivo en el logo */
   }
 }
 
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px; /* Ajusta el padding */
+    margin-top: 0 !important; /* Evita márgenes no deseados */
+  }
+}
 /* Estilo base para el botón */
 .btn-animated {
   background-color: #44b7e8; /* Color verde */
