@@ -9,6 +9,8 @@
   right: 0; 
   z-index: 1000; 
   padding: 7px 20px;
+  padding-top: 5px; /* Ajusta este valor según sea necesario */
+  margin-top: 0;
 }
 body {
   padding-top: 80px;
@@ -559,10 +561,8 @@ model-viewer:hover {
   }
 
   .navbar {
-    height: auto; /* O usa un valor menor si es demasiado grande */
-    line-height: normal; /* Evita que el contenido se alinee incorrectamente */
-}
-
+    padding: -5px -3px; /* Ajusta el padding de la barra de navegación */
+  }
 }
 
 
