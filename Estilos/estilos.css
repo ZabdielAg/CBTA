@@ -559,8 +559,10 @@ model-viewer:hover {
   }
 
   .navbar {
-    padding: -5px -3px; /* Ajusta el padding de la barra de navegación */
-  }
+    height: auto; /* O usa un valor menor si es demasiado grande */
+    line-height: normal; /* Evita que el contenido se alinee incorrectamente */
+}
+
 }
 
 
