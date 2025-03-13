@@ -55,10 +55,6 @@ font-style: normal;
   color: #ffffff;
 }
 
-.navbar-toggler-icon {
-  filter: invert(1);
-}
-
 .search-icon {
   color: white;
   font-size: 22px;
@@ -183,6 +179,9 @@ h3:hover {
   }
 }
 
+
+
+
 /* Noticias */
 
 .news-section {
@@ -297,7 +296,7 @@ h3 {
   top: 0;
   z-index: 1040;
   padding: 10px 0; 
-  background-color: #ffffff;
+  background-color: #333;
   transition: top 0.3s;
 }
 
@@ -400,11 +399,11 @@ h3 {
 
 @media (min-width: 768px) {
   .contact-icon {
-    width: 50px; /* Ajuste para pantallas medianas */
+    width: 60px; /* Ajuste para pantallas medianas */
   }
 
   .contact-title {
-    font-size: 1.20rem; /* Ajuste para pantallas medianas */
+    font-size: 1.25rem; /* Ajuste para pantallas medianas */
   }
 
   .mapacbta {
@@ -432,17 +431,6 @@ h3 {
   }
 }
 
-@media (max-width: 283px) {
-  .carousel-caption h1 {
-    font-size: 1.05rem; /* Reduce aún más el título en dispositivos muy pequeños */
-  }
-
-  .carousel-caption p {
-    font-size: 0.2rem; /* Ajusta el tamaño del párrafo */
-  }
-}
-
-
 /* Contenedor de la imagen y texto */
 .container-fluid {
   padding: 0;
@@ -452,8 +440,66 @@ h3 {
   position: relative;
 }
 
+/* Imagen de fondo responsiva */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
 
-/* texto intro */
+/* Estilo del texto sobre la imagen */
+.texto-intro {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Asegura el centrado perfecto */
+  color: white;
+  text-align: justify;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 80%; /* Limita el ancho del texto */
+}
+
+/* Estilos para el título */
+.texto-intro h1 {
+  font-size: 2.2rem; /* Tamaño de fuente para el título */
+  font-weight: bold;
+}
+
+/* Estilos para el párrafo */
+.texto-intro p {
+  font-size: 1.10rem; /* Tamaño de fuente para el párrafo */
+}
+
+/* Responsividad: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .texto-intro h1 {
+    font-size: 1.10rem; /* Reduce el tamaño del título */
+  }
+  
+  .texto-intro p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo */
+  }
+  
+  .texto-intro {
+    width: 85%; /* Aumenta el ancho del texto en pantallas pequeñas */
+    padding: 0 15px; /* Añade un poco de espacio lateral */
+  }
+}
+
+/* Responsividad para dispositivos móviles más pequeños */
+@media (max-width: 480px) {
+  .texto-intro h1 {
+    font-size: 1.0rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .texto-intro p {
+    font-size: 0.5rem; /* Ajusta el tamaño del párrafo */
+  }
+
+  .texto-intro {
+    width: 85%; /* Más espacio para el texto en pantallas muy pequeñas */
+    padding: 0 5px; /* Menos espacio lateral */
+  }
+}
 
 
 /* modelos */
