@@ -698,6 +698,7 @@ responsivo en el logo */
     height: auto; /* Mantiene las proporciones */
     object-fit: contain;
     text-align: center;
+    padding-top: 80px;
   }
 }
 
@@ -708,6 +709,7 @@ responsivo en el logo */
     height: auto; /* Mantiene las proporciones */
     position: relative;
     text-align: center;
+    padding-top: 80px;
     object-fit: contain;
   }
 }
@@ -717,6 +719,7 @@ responsivo en el logo */
 @media (max-width: 768px) {
   .contenido {
     padding: 2px; /* Reduce el padding en pantallas medianas */
+    padding-top: 80px;
   }
 }
 
@@ -724,6 +727,7 @@ responsivo en el logo */
 @media (max-width: 480px) {
   .contenido {
     padding: 2px; /* Reduce aún más el padding */
+    padding-top: 80px;
   }
 }
 
@@ -731,6 +735,7 @@ responsivo en el logo */
 @media (max-width: 360px) {
   .contenido {
     padding: 2px; /* Padding mínimo para pantallas muy pequeñas */
+    padding-top: 80px;
   }
 }
 
