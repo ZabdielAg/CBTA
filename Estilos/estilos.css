@@ -26,7 +26,7 @@
   }
 
   .navbar-brand img {
-    max-height: 90px; /* Limitar el tamaño de la imagen del logo */
+    max-height: 80px; /* Limitar el tamaño de la imagen del logo */
       object-fit: cover;
 
   }
@@ -42,7 +42,7 @@ body {
 /* Para evitar que el navbar cubra contenido en pantallas muy pequeñas */
 @media (max-width: 576px) {
   body {
-    padding-top: 110px; /* Ajuste adicional en pantallas muy pequeñas */
+    padding-top: 115px; /* Ajuste adicional en pantallas muy pequeñas */
   }
 }
 
