@@ -26,7 +26,7 @@
 
 /* Body */
 body {
-  padding-top: 50px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
+  padding-top: 100px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
   border-radius: 0; /* El border-radius del body lo cambiamos a 0 para evitar un borde curvado en el body */
   transition: padding-top 0.3s ease-in-out; /* Transición suave para padding-top */
 }
@@ -34,7 +34,7 @@ body {
 /* Para evitar que el navbar cubra contenido en pantallas muy pequeñas */
 @media (max-width: 576px) {
   body {
-    padding-top: 80px; /* Ajuste adicional en pantallas muy pequeñas */
+    padding-top: 100px; /* Ajuste adicional en pantallas muy pequeñas */
   }
 }
 
