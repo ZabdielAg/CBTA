@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar {
   background-color: #003366; 
   box-shadow: 0 4px 8px rgba(249, 249, 249, 0.1); 
@@ -9,11 +10,40 @@
   right: 0; 
   z-index: 1000; 
   padding: 7px 20px;
+  transition: padding 0.3s ease-in-out; /* Animación para transición suave al cambiar tamaño */
 }
+
+.intro {
+  width: 100%; 
+  height: 600px; 
+  object-fit: cover;
+}
+
+/* Ajustes para cuando el navbar colapsa o está en dispositivos pequeños */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 10px; /* Menos padding en pantallas pequeñas */
+  }
+
+  .navbar-brand img {
+    max-height: 40px; /* Limitar el tamaño de la imagen del logo */
+  }
+}
+
+/* Body */
 body {
-  padding-top: 85px;
-  border-radius: 90%;
+  padding-top: 110px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
+  border-radius: 0; /* El border-radius del body lo cambiamos a 0 para evitar un borde curvado en el body */
+  transition: padding-top 0.3s ease-in-out; /* Transición suave para padding-top */
 }
+
+/* Para evitar que el navbar cubra contenido en pantallas muy pequeñas */
+@media (max-width: 576px) {
+  body {
+    padding-top: 110px; /* Ajuste adicional en pantallas muy pequeñas */
+  }
+}
+
 
 .intro {
   width: 100%; 
@@ -53,6 +83,10 @@ font-style: normal;
 .navbar-toggler{
 
   color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .search-icon {
@@ -179,9 +213,6 @@ h3:hover {
   }
 }
 
-
-
-
 /* Noticias */
 
 .news-section {
@@ -296,7 +327,7 @@ h3 {
   top: 0;
   z-index: 1040;
   padding: 10px 0; 
-  background-color: #333;
+  background-color: #ffffff;
   transition: top 0.3s;
 }
 
@@ -399,11 +430,11 @@ h3 {
 
 @media (min-width: 768px) {
   .contact-icon {
-    width: 60px; /* Ajuste para pantallas medianas */
+    width: 50px; /* Ajuste para pantallas medianas */
   }
 
   .contact-title {
-    font-size: 1.25rem; /* Ajuste para pantallas medianas */
+    font-size: 1.20rem; /* Ajuste para pantallas medianas */
   }
 
   .mapacbta {
@@ -431,6 +462,17 @@ h3 {
   }
 }
 
+@media (max-width: 283px) {
+  .carousel-caption h1 {
+    font-size: 1.05rem; /* Reduce aún más el título en dispositivos muy pequeños */
+  }
+
+  .carousel-caption p {
+    font-size: 0.2rem; /* Ajusta el tamaño del párrafo */
+  }
+}
+
+
 /* Contenedor de la imagen y texto */
 .container-fluid {
   padding: 0;
@@ -440,66 +482,44 @@ h3 {
   position: relative;
 }
 
-/* Imagen de fondo responsiva */
-.img-fluid {
-  width: 100%;
-  height: auto;
+
+/* texto intro */
+h1.display-4 {
+  font-family: 'Century Gothic', sans-serif;
+  color: #6a4f38; /* Un color marrón suave para el texto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para hacer el texto más legible */
+  margin-bottom: 20px;
 }
 
-/* Estilo del texto sobre la imagen */
-.texto-intro {
-  position: absolute;
-  top: 50%; /* Centra verticalmente */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Asegura el centrado perfecto */
-  color: white;
-  text-align: justify;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  width: 80%; /* Limita el ancho del texto */
+.texto-Anita {
+  font-family: 'Arial', sans-serif;
+  color: #4a3f35; /* Un tono marrón oscuro para mayor contraste */
+  line-height: 1.6; /* Mejor interlineado para una lectura más cómoda */
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
-/* Estilos para el título */
-.texto-intro h1 {
-  font-size: 2.2rem; /* Tamaño de fuente para el título */
+strong {
+  color: #d18a4e; /* Color dorado suave para los encabezados */
   font-weight: bold;
 }
 
-/* Estilos para el párrafo */
-.texto-intro p {
-  font-size: 1.10rem; /* Tamaño de fuente para el párrafo */
+section {
+  background-color: #f4f1e1; /* Fondo beige suave */
+  padding: 50px 20px;
 }
 
-/* Responsividad: Ajustes para pantallas más pequeñas */
+/* Responsive y ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
-  .texto-intro h1 {
-    font-size: 1.10rem; /* Reduce el tamaño del título */
+  h1.display-4 {
+    font-size: 2.5rem;
   }
-  
-  .texto-intro p {
-    font-size: 1rem; /* Ajusta el tamaño del párrafo */
-  }
-  
-  .texto-intro {
-    width: 85%; /* Aumenta el ancho del texto en pantallas pequeñas */
-    padding: 0 15px; /* Añade un poco de espacio lateral */
+
+  p {
+    font-size: 1rem;
   }
 }
 
-/* Responsividad para dispositivos móviles más pequeños */
-@media (max-width: 480px) {
-  .texto-intro h1 {
-    font-size: 1.0rem; /* Reduce aún más el tamaño del título */
-  }
-
-  .texto-intro p {
-    font-size: 0.5rem; /* Ajusta el tamaño del párrafo */
-  }
-
-  .texto-intro {
-    width: 85%; /* Más espacio para el texto en pantallas muy pequeñas */
-    padding: 0 5px; /* Menos espacio lateral */
-  }
-}
 
 
 /* modelos */
