@@ -13,6 +13,12 @@
   transition: padding 0.3s ease-in-out; /* Animación para transición suave al cambiar tamaño */
 }
 
+.intro {
+  width: 100%; 
+  height: 600px; 
+  object-fit: cover;
+}
+
 /* Ajustes para cuando el navbar colapsa o está en dispositivos pequeños */
 @media (max-width: 768px) {
   .navbar {
@@ -26,16 +32,15 @@
 
 /* Body */
 body {
-  padding-top: 100px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
+  padding-top: 110px; /* Aumentamos un poco el espacio superior para evitar que el navbar tape el contenido */
   border-radius: 0; /* El border-radius del body lo cambiamos a 0 para evitar un borde curvado en el body */
   transition: padding-top 0.3s ease-in-out; /* Transición suave para padding-top */
-  object-fit: cover;
 }
 
 /* Para evitar que el navbar cubra contenido en pantallas muy pequeñas */
 @media (max-width: 576px) {
   body {
-    padding-top: 100px; /* Ajuste adicional en pantallas muy pequeñas */
+    padding-top: 110px; /* Ajuste adicional en pantallas muy pequeñas */
   }
 }
 
