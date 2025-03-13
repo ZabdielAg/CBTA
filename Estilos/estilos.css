@@ -27,6 +27,8 @@
 
   .navbar-brand img {
     max-height: 100px; /* Limitar el tamaño de la imagen del logo */
+    object-fit: cover;
+
   }
 }
 
