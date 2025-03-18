@@ -147,6 +147,10 @@ font-style: normal;
   position: relative;
   overflow: hidden;
   border-radius: 15px; 
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
