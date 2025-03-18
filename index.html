@@ -19,58 +19,62 @@
 </head>
 <body>
 
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand navbar-center mx-auto" href="#">
-      <img src="multimedia/logo sin letrasxp.png" alt="Logo CBTA" class="logo-img">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="carreras.html">Carreras</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Oportunidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contacto.html">Contáctanos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Más
+    <!-- Navbar -->
+    <nav class="navbar mx-auto navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand mx-auto" href="index.html">
+            <img src="multimedia/logo sin letrasxp.png" alt="Logo CBTA" class="logo-img"> 
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="Docentes.html">Docentes</a></li>
-            <li><a class="dropdown-item" href="#">Egresados</a></li>
-            <li><a class="dropdown-item" href="#">Noticias</a></li>
-          </ul>
-        </li>
-      </ul>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse mx-auto navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                      <a class="nav-link " href="carreras.html">Carreras</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Oportunidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contáctanos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Más
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="Docentes.html">Docentes</a></li>
+                          <li><a class="dropdown-item" href="#">Egresados</a></li>
+                          <li><a class="dropdown-item" href="#">Noticias</a></li>
+          
+                      </ul>
+                  </li>
+              </ul>
 
-      <!-- Buscador -->
-      <div class="d-flex align-items-center ms-auto">
-        <i class="fas fa-search search-icon" id="searchIcon" style="cursor: pointer;"></i>
-        <div class="search-panel mx-auto" id="searchPanel" style="display: none;">
-          <input type="search" placeholder="Buscar..." id="searchInput" class="form-control">
-          <ul class="search-recommendations mx-auto" id="searchResults">
-            <li><a href="#">Becas disponibles</a></li>
-            <li><a href="carreras.html">Programas académicos</a></li>
-            <li><a href="#">Talleres y deportes</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><a href="#">Oportunidades</a></li>
-            <li><a href="Docentes.html">Docentes</a></li>
-            <li><a href="#">Egresados</a></li>
-            <li><a href="#">Noticias</a></li>
-          </ul>
-        </div>
+              <!-- El ico -->
+              <div>
+                  <i class="fas fa-search search-icon" id="searchIcon"></i>
+              </div>
+
+              <!-- Buscador -->
+              <div class="search-panel mx-auto" id="searchPanel">
+                <input type="search" placeholder="Buscar..." id="searchInput">
+                <ul class="search-recommendations mx-auto" id="searchResults">
+                  <li><a href="#">Becas disponibles</a></li>
+                  <li><a href="carreras.html">Programas académicos</a></li>
+                  <li><a href="#">Talleres y deportes</a></li>
+                  <li><a href="Contacto.html">Contacto</a></li>
+                  <li><a href="#">Oportunidades</a></li>
+                  <li><a href="Docentes.html">Docentes</a></li>
+                  <li><a href="#">Egresados</a></li>
+                  <li><a href="#">Noticias</a></li>
+
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -110,14 +114,13 @@
   </section>
   
   <br>
-  <br>
   <!-- Noticias -->
   <div class="container-fluid news-section" style="position: relative;">
     <!-- Imagen de fondo -->
     <img src="multimedia/noticias.png" class="img-fluid w-100 news-background" alt="Noticias Background" style="position: absolute; top: 0; left: 0; z-index: -1; opacity: 0.5;">
-  
-    <div class="container py-5">
-      <h3 class="text-center mb-5">Noticias</h3>
+    <div class="contenedor-texto">
+      <h2 class="texto-docente">Noticias</h2>
+  </div>  
   
       <div class="row g-4">
         <!-- Tarjeta 1 -->
@@ -134,7 +137,7 @@
   
         <!-- Tarjeta 2 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100">
+          <div class="card w-70">
             <img src="multimedia/noticia2.jpeg" class="card-img-top" alt="Global Agroalimentario">
             <div class="card-body">
               <h5 class="card-title">¿Sabes qué es el teocintle?</h5>
@@ -146,31 +149,33 @@
   
         <!-- Tarjeta 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100">
+          <div class="card w-70">
             <img src="multimedia/noticia3.jpg" class="card-img-top" alt="Foro de Innovación Tecnológica">
             <div class="card-body">
               <h5 class="card-title">10 de enero, Día Mundial de las Aves</h5>
               <p class="card-text">Las aves a menudo chocan con ventanas transparentes. 
                 Coloque siluetas de aves, puntos o líneas en la parte exterior para que vean el obstáculo.</p>
               <a href="#" class="btn btn-warning">Leer más</a>
+              
             </div>
           </div>
         </div>
-      </div>
-  
-      <!-- Botón "Más Noticias" -->
+            <!-- Botón "Más Noticias" -->
       <div class="text-center mt-4">
         <a href="#" class="btn btn-danger">Más Noticias</a>
       </div>
     </div>
   </div>
+      </div>
+  
   
   
     <br>
     <br>  
         <!--  -->
-        <div class="container py-5">
-          <h3 class="text-center mb-5">Educación</h3>
+        <div class="contenedor-texto">
+          <h2 class="texto-docente">Educación</h2>
+      </div>  
 
         <div class="row">
         <div class="col-md-4 text-center">
