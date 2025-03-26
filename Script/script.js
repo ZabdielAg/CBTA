@@ -165,3 +165,45 @@ function restartTest() {
     document.getElementById("startScreen").classList.remove("hidden");
     document.getElementById("testContainer").classList.add("hidden");
 }
+
+
+// noticias
+function openModal2(noticia) {
+    // Obtenemos el contenido de la noticia según el id
+    let modalContent2 = '';
+
+    if (noticia === 'noticia2-1') {
+        modalContent2 = `
+            <h5>🔸 Torneo de Fútbol Intercolegial 2</h5>
+            <img src="multimedia/noticia2-1.jpg" class="img-fluid mb-3" alt="Evento CBTA 2">
+            <p>¡Nuestro equipo representará al CBTA30 en el torneo estatal! Conoce más sobre fechas y partidos.</p>
+            <p>Detalles adicionales sobre el evento, incluyendo el calendario, las reglas y cómo apoyar al equipo.</p>
+        `;
+    } else if (noticia === 'noticia2-2') {
+        modalContent2 = `
+            <h5>📚 Becas de Excelencia 2025 2</h5>
+            <img src="multimedia/noticia2-2.jpg" class="img-fluid mb-3" alt="Becas disponibles 2">
+            <p>Consulta los requisitos para postularte a las becas académicas y deportivas del próximo ciclo escolar.</p>
+            <p>Los interesados deben cumplir con ciertas condiciones académicas y de participación en actividades extraescolares.</p>
+        `;
+    } else if (noticia === 'noticia2-3') {
+        modalContent2 = `
+            <h5>🎭 Nuevos Talleres Artísticos 2</h5>
+            <img src="multimedia/noticia2-3.jpg" class="img-fluid mb-3" alt="Nuevos talleres 2">
+            <p>¡Se abren inscripciones para música, danza y teatro! Descubre cómo participar.</p>
+            <p>Estos talleres están diseñados para todos los niveles. No importa si eres principiante o avanzado, ¡todos pueden unirse!</p>
+        `;
+    }
+
+    // Insertar el contenido en el modal
+    document.getElementById('modal-body2').innerHTML = modalContent2;
+
+    // Mostrar el modal
+    document.getElementById('modal2').style.display = 'block';
+}
+
+function closeModal2() {
+    // Ocultar el modal
+    document.getElementById('modal2').style.display = 'none';
+}
+
